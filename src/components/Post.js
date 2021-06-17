@@ -7,32 +7,28 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 import { Avatar } from "@material-ui/core";
 
-function Post( displayName, username, verified, text, image, avatar ) {
+function Post(props) {
     
     return (
         <div className="post">
             <div className="post_avatar">
-                <Avatar src={avatar} />
+                <Avatar src={props.avatar} />
             </div>
             <div className="post_body">
                 <div className="post_header">
                     <div className="post_headerText">
                         <h3>
-                            {/* {displayName}{" "}
-                        <span className="post__headerSpecial">
-                            {verified && <VerifiedUserIcon className="post__badge" />} @
-                            {username}
-                        </span> */}
-                         <span className="post__headerSpecial">
-                            {verified && <VerifiedUserIcon className="post__badge" />} @
-                            Lotfi D
-                        </span> 
+                         {props.displayName}{" "}
+                            <span className="post_headerSpecial">
+                            {props.verified && <VerifiedUserIcon className="post_badge" />} 
+                            @{props.username}
+                            </span>
                         </h3>
                     </div>
                     <div className="post_headerDescription">
-                        <p>blablabla{text}</p>
+                        <p>{props.text}</p>
                     </div>
-                    <img src="https://sm.ign.com/t/ign_fr/news/a/ash-ketchu/ash-ketchum-finally-becomes-a-pokemon-league-champion_5mfu.1280.jpg" alt="" />
+                    <img src={props.image} alt="" />
                     <div className="post_footer">
                         <ChatBubbleOutlineIcon fontSize="small" />
                         <RepeatIcon fontSize="small" />

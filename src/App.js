@@ -6,13 +6,9 @@ import Widgets from './components/Widgets';
 function App() {
   return (
     <div className="App">
-  
       <Sidebar />
-
       <MiddlePage />
-      
       <Widgets />
-      
     </div>
   );
 }
