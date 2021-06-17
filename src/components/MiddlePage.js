@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
+import "./Middlepage.css";
 
 function MiddlePage() {
     return (
-        <div>
+        <div className="middlepage">
            {/* Header */}
-            <h2>Home</h2>
+            <div className="middlepage_header">
+                <h2 >Home</h2>
+            </div>
            {/* Tweetbox */} 
+     
 
+            
            {/* Post */} 
            {/* Post */} 
            {/* Post */} 

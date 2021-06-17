@@ -1,6 +1,7 @@
 import './App.css';
 import Sidebar from './components/Sidebar';
 import MiddlePage from './components/MiddlePage';
+import Widgets from './components/Widgets';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
 
       <MiddlePage />
       
-      {/*Widgets */}
+      <Widgets />
+      
     </div>
   );
 }
