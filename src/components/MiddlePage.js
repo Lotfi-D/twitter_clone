@@ -1,5 +1,6 @@
 import React from 'react';
-import "./Middlepage.css";
+import './Middlepage.css';
+import TweetBox from './TweetBox'
 
 function MiddlePage() {
     return (
@@ -9,7 +10,7 @@ function MiddlePage() {
                 <h2 >Home</h2>
             </div>
            {/* Tweetbox */} 
-     
+            <TweetBox />
 
             
            {/* Post */} 
